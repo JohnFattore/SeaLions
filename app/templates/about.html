@@ -1,7 +1,16 @@
 {% extends "layout.html" %}
 {% block content %}
    <div class="about">
-     <h1>About me</h1>
-     <p>This is a portfolio site about anything that can be put in a portfolio.</p>
+     <h1>Submission</h1>
+     <p>Doesn't actually add to database, fake add encounter.</p>
    </div>
+   <form action="/about" method="post">
+      <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="name" name="name" placeholder="Name of Sea Lion" type="text">
+      </div>
+      <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="time" name="time" placeholder="time" type="text">
+      </div>
+      <button class="btn btn-primary" type="submit">Add Encounter</button>
+   </form>
  {% endblock %}
